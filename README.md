@@ -1,4 +1,4 @@
-# **Notificador de Actualizaciones por Telegram**
+# **Recibe avisos sobre las actualizaciones de tu servidor en Telegram**
 
 Este repositorio contiene un script de Bash que te permite recibir notificaciones en tu cuenta de Telegram cada vez que haya actualizaciones disponibles en tu sistema.
 
@@ -17,7 +17,7 @@ Antes de utilizar este script, asegúrate de tener lo siguiente:
 
 > Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
 >
-> [Notificador de Actualizaciones por Telegram](https://blog.juanje.net/blog/2023/09/notificador-de-actualizaciones-por-telegram/)
+> [Recibe avisos sobre las actualizaciones de tu servidor en Telegram](https://blog.juanje.net/blog/2023/09/recibe-avisos-sobre-las-actualizaciones-de-tu-servidor-en-telegram/)
 
 ## **Configuración y uso del script**
 
@@ -60,7 +60,7 @@ Si todo ha ido bien recibirás un mensaje informándote de las actualizaciones d
 
 Instrucciones disponibles en:
 
-[Notificador de Actualizaciones por Telegram - # Programar la ejecución del script](https://blog.juanje.net/blog/2023/09/notificador-de-actualizaciones-por-telegram/#programar-la-ejecuci%C3%B3n-del-script)
+[Recibe avisos sobre las actualizaciones de tu servidor en Telegram - # Programar la ejecución del script](https://blog.juanje.net/blog/2023/09/recibe-avisos-sobre-las-actualizaciones-de-tu-servidor-en-telegram/#programar-la-ejecuci%C3%B3n-del-script)
 
 ---
 
