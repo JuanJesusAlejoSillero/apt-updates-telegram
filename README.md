@@ -1,6 +1,8 @@
 # **Notificador de Actualizaciones por Telegram**
 
-Este repositorio contiene un script de Bash que te permite recibir notificaciones en tu cuenta de Telegram cada vez que haya actualizaciones disponibles en tu sistema. Puedes configurar este script para que se ejecute periódicamente a través de un *timer de systemd* o *cronjob* y recibir notificaciones instantáneas sobre las actualizaciones disponibles.
+Este repositorio contiene un script de Bash que te permite recibir notificaciones en tu cuenta de Telegram cada vez que haya actualizaciones disponibles en tu sistema.
+
+Para que este script se ejecute periódicamente ver el apartado: [**Programar la ejecución del script**](#programar-la-ejecución-del-script).
 
 ## **Requisitos**
 
@@ -56,9 +58,9 @@ Si todo ha ido bien recibirás un mensaje informándote de las actualizaciones d
 
 ## **Programar la ejecución del script**
 
-Instrucciones disponibles en este post:
+Instrucciones disponibles en:
 
-[Se publicará próximamente, disculpe las molestias](https://blog.juanje.net/)
+[Notificador de Actualizaciones por Telegram - # Programar la ejecución del script](https://blog.juanje.net/blog/2023/09/notificador-de-actualizaciones-por-telegram/#programar-la-ejecuci%C3%B3n-del-script)
 
 ---
 
