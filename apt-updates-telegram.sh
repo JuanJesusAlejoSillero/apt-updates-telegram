@@ -53,3 +53,6 @@ fi
 
 # Llamar a la función para enviar el mensaje
 enviar_mensaje_telegram "$mensaje"
+
+# Source:
+# https://github.com/JuanJesusAlejoSillero/apt-updates-telegram
