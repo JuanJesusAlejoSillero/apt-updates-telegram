@@ -11,7 +11,7 @@ Antes de utilizar este script, asegúrate de tener lo siguiente:
 - El ID de nuestro chat con el bot.
 - `apt` como gestor de paquetes en tu sistema. Si utilizas un gestor diferente, deberás adaptar este script.
 - `curl` instalado.
-- Poder ejecutar comandos como `root` (ya sea como usuario `root` directamente, o con `sudo` o `doas`). En mi caso lo haré directamente como usuario `root` (usando `su -`).
+- Poder ejecutar comandos como `root` (ya sea como usuario `root` directamente, o con `sudo` o `doas`). En mi caso lo haré como `root` (usando `su -`).
 
 > Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
 >
