@@ -13,8 +13,8 @@ Antes de utilizar este script, asegúrate de tener lo siguiente:
 - Tener `curl` instalado.
 
 > Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
-
-[Notificador de Actualizaciones por Telegram](https://blog.juanje.net/)
+>
+> [Notificador de Actualizaciones por Telegram](https://blog.juanje.net/blog/2023/09/notificador-de-actualizaciones-por-telegram/)
 
 ## **Configuración**
 
