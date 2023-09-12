@@ -9,39 +9,46 @@ Antes de utilizar este script, asegúrate de tener lo siguiente:
 - Una cuenta de Telegram.
 - Un bot de Telegram y su correspondiente token.
 - El ID de nuestro chat con el bot.
-- Tener `apt` como gestor de paquetes en tu sistema. Si utilizas un gestor diferente, deberás adaptar este script.
-- Tener `curl` instalado.
+- `apt` como gestor de paquetes en tu sistema. Si utilizas un gestor diferente, deberás adaptar este script.
+- `curl` instalado.
+- Poder ejecutar comandos como `root` (ya sea como usuario `root` directamente, o con `sudo` o `doas`). En mi caso lo haré directamente como usuario `root` (usando `su -`).
 
 > Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
 >
 > [Notificador de Actualizaciones por Telegram](https://blog.juanje.net/blog/2023/09/notificador-de-actualizaciones-por-telegram/)
 
-## **Configuración**
+## **Configuración y uso del script**
 
 Sigue estos pasos para configurar el script:
 
-1. Clona este repositorio en tu sistema:
+1. Accede como `root` y clona este repositorio en tu sistema:
 
-```bash
-git clone https://github.com/JuanJesusAlejoSillero/apt-updates-telegram.git
-```
+    ```bash
+    su -
+
+    git clone https://github.com/JuanJesusAlejoSillero/apt-updates-telegram.git
+    ```
 
 2. Edita el archivo `apt-updates-telegram.sh` y modifica las siguientes variables con tus valores:
 
-- BOT_TOKEN: El token de tu bot de Telegram. Se obtiene de [botfather](https://t.me/botfather).
-- CHAT_ID: El ID del chat donde deseas recibir las notificaciones. Puedes obtenerlo de varias formas. Las instrucciones completas están en mi [blog](https://blog.juanje.net/).
+    - BOT_TOKEN: El token de tu bot de Telegram. Se obtiene de [botfather](https://t.me/botfather).
+    - CHAT_ID: El ID del chat donde deseas recibir las notificaciones. Puedes obtenerlo de varias  formas. Las instrucciones completas están en mi [blog](https://blog.juanje.net/).
+
+    ```bash
+    nano -cl apt-updates-telegram/apt-updates-telegram.sh
+    ```
 
 3. Dale permisos de ejecución al script:
 
-```bash
-chmod +x apt-updates-telegram.sh
-```
+    ```bash
+    chmod +x apt-updates-telegram/apt-updates-telegram.sh
+    ```
 
 4. Prueba su funcionamiento ejecutándolo manualmente:
 
-```bash
-./apt-updates-telegram.sh
-```
+    ```bash
+    ./apt-updates-telegram/apt-updates-telegram.sh
+    ```
 
 Si todo ha ido bien recibirás un mensaje informándote de las actualizaciones disponibles, o, en su defecto, de la ausencia de estas:
 
