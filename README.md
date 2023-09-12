@@ -7,9 +7,14 @@ Este repositorio contiene un script de Bash que te permite recibir notificacione
 Antes de utilizar este script, asegúrate de tener lo siguiente:
 
 - Una cuenta de Telegram.
-- Un bot de Telegram y su correspondiente token. Puedes obtenerlo siguiendo las instrucciones en la documentación oficial de Telegram.
+- Un bot de Telegram y su correspondiente token.
+- El ID de nuestro chat con el bot.
 - Tener `apt` como gestor de paquetes en tu sistema. Si utilizas un gestor diferente, deberás adaptar este script.
 - Tener `curl` instalado.
+
+> Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
+
+[Notificador de Actualizaciones por Telegram](https://blog.juanje.net/)
 
 ## **Configuración**
 
@@ -21,7 +26,7 @@ Sigue estos pasos para configurar el script:
 git clone https://github.com/JuanJesusAlejoSillero/apt-updates-telegram.git
 ```
 
-2. Edita el archivo `apt-updates-telegram.sh` y edita las siguientes variables con tus valores:
+2. Edita el archivo `apt-updates-telegram.sh` y modifica las siguientes variables con tus valores:
 
 - BOT_TOKEN: El token de tu bot de Telegram. Se obtiene de [botfather](https://t.me/botfather).
 - CHAT_ID: El ID del chat donde deseas recibir las notificaciones. Puedes obtenerlo de varias formas. Las instrucciones completas están en mi [blog](https://blog.juanje.net/).
@@ -38,13 +43,19 @@ chmod +x apt-updates-telegram.sh
 ./apt-updates-telegram.sh
 ```
 
-Si todo ha ido bien recibirás una notificación informándote de las actualizaciones disponibles.
+Si todo ha ido bien recibirás un mensaje informándote de las actualizaciones disponibles, o, en su defecto, de la ausencia de estas:
+
+![script-1](img/script-1.png)
+
+> **Por favor, si te ha sido útil el script considera darle una estrella al repositorio de GitHub y/o compartirlo para que llegue a más gente**
+>
+> ![github-star](img/github-star.gif)
 
 ## **Programar la ejecución del script**
 
-Instrucciones disponibles en mi este post:
+Instrucciones disponibles en este post:
 
-[Notificador de Actualizaciones por Telegram](https://blog.juanje.net/)
+[Se publicará próximamente, disculpe las molestias](https://blog.juanje.net/)
 
 ---
 
