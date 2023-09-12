@@ -54,15 +54,17 @@ Si todo ha ido bien recibirás un mensaje informándote de las actualizaciones d
 
 ![script-1](img/script-1.png)
 
-> **Por favor, si te ha sido útil el script considera darle una estrella al repositorio de GitHub y/o compartirlo para que llegue a más gente**
->
-> ![github-star](img/github-star.gif)
-
 ## **Programar la ejecución del script**
 
 Instrucciones disponibles en este post:
 
 [Se publicará próximamente, disculpe las molestias](https://blog.juanje.net/)
+
+---
+
+> **Por favor, si te ha sido útil el script considera darle una estrella al repositorio de GitHub y/o compartirlo para que llegue a más gente**
+>
+> ![github-star](img/github-star.gif)
 
 ---
 
