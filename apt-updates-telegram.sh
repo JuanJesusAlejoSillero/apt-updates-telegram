@@ -1,4 +1,7 @@
 #!/bin/bash
+# ---------------------------------------------------------------------------------------------------
+# Script de bash para recibir notificaciones sobre las actualizaciones de paquetes mediante Telegram
+# ---------------------------------------------------------------------------------------------------
 
 # Token de la API de Bots de Telegram (Sustituye 'TOKEN_DEL_BOT' con el token real de tu bot)
 BOT_TOKEN="TOKEN_DEL_BOT"
