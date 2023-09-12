@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Token de la API de Bots de Telegram (Sustituye 'YOUR_BOT_TOKEN' con el token real de tu bot)
+# Token de la API de Bots de Telegram (Sustituye 'TOKEN_DEL_BOT' con el token real de tu bot)
 BOT_TOKEN="TOKEN_DEL_BOT"
 
-# ID de tu chat en Telegram (Sustituye 'YOUR_CHAT_ID' con tu ID de chat real)
+# ID de tu chat en Telegram (Sustituye 'ID_DEL_CHAT' con tu ID de chat real)
 CHAT_ID="ID_DEL_CHAT"
 
 # FQDN del servidor para enviarlo en los mensajes y así poder identificar fácilmente
