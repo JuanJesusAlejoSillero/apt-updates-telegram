@@ -1,4 +1,4 @@
-# **Recibe avisos sobre las actualizaciones de tu servidor en Telegram**
+# **Recibe notificaciones sobre las actualizaciones de tu servidor en Telegram**
 
 Este repositorio contiene un script de Bash que te permite recibir notificaciones en tu cuenta de Telegram cada vez que haya actualizaciones disponibles en tu sistema.
 
