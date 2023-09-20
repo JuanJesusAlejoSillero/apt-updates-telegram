@@ -17,7 +17,7 @@ Antes de utilizar este script, asegúrate de tener lo siguiente:
 
 > Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
 >
-> [Recibe avisos sobre las actualizaciones de tu servidor en Telegram](https://blog.juanje.net/blog/2023/09/recibe-avisos-sobre-las-actualizaciones-de-tu-servidor-en-telegram/)
+> [Recibe avisos sobre las actualizaciones de tu servidor en Telegram](https://blog.juanje.net/blog/2023/09/recibe-notificaciones-sobre-las-actualizaciones-de-tu-servidor-en-telegram/)
 
 ## **Configuración y uso del script**
 
@@ -33,8 +33,8 @@ Sigue estos pasos para configurar el script:
 
 2. Edita el archivo `apt-updates-telegram.sh` y modifica las siguientes variables con tus valores:
 
-    - BOT_TOKEN: El token de tu bot de Telegram. Se obtiene de [botfather](https://t.me/botfather).
-    - CHAT_ID: El ID del chat donde deseas recibir las notificaciones. Puedes obtenerlo de varias  formas. Las instrucciones completas están en mi [blog](https://blog.juanje.net/).
+    - BOT_TOKEN: El token de tu bot de Telegram. Se obtiene de [@BotFather](https://t.me/botfather).
+    - CHAT_ID: El ID del chat donde deseas recibir las notificaciones. Puedes obtenerlo de varias formas. Las instrucciones completas están en mi [blog](https://blog.juanje.net/blog/2023/09/recibe-notificaciones-sobre-las-actualizaciones-de-tu-servidor-en-telegram/).
 
     ```bash
     nano -cl apt-updates-telegram/apt-updates-telegram.sh
@@ -60,11 +60,11 @@ Si todo ha ido bien recibirás un mensaje informándote de las actualizaciones d
 
 Instrucciones disponibles en:
 
-[Recibe avisos sobre las actualizaciones de tu servidor en Telegram - # Programar la ejecución del script](https://blog.juanje.net/blog/2023/09/recibe-avisos-sobre-las-actualizaciones-de-tu-servidor-en-telegram/#programar-la-ejecuci%C3%B3n-del-script)
+[Recibe notificaciones sobre las actualizaciones de tu servidor en Telegram - # Programar la ejecución del script](https://blog.juanje.net/blog/2023/09/recibe-notificaciones-sobre-las-actualizaciones-de-tu-servidor-en-telegram/#programar-la-ejecuci%C3%B3n-del-script)
 
 ---
 
-> **Por favor, si te ha sido útil el script considera darle una estrella al repositorio de GitHub y/o compartirlo para que llegue a más gente**
+> **⭐️ Por favor, si te ha sido útil el script considera darle una estrella al repositorio de GitHub y/o compartirlo para que llegue a más gente: ⭐️**
 >
 > ![github-star](img/github-star.gif)
 
