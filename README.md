@@ -17,7 +17,7 @@ Antes de utilizar este script, asegúrate de tener lo siguiente:
 
 > Si no dispones de un bot de telegram, su token o el ID de tu chat con él, puedes seguir las instrucciones disponibles en este post:
 >
-> [Recibe avisos sobre las actualizaciones de tu servidor en Telegram](https://blog.juanje.net/blog/2023/09/recibe-notificaciones-sobre-las-actualizaciones-de-tu-servidor-en-telegram/)
+> [Recibe notificaciones sobre las actualizaciones de tu servidor en Telegram](https://blog.juanje.net/blog/2023/09/recibe-notificaciones-sobre-las-actualizaciones-de-tu-servidor-en-telegram/)
 
 ## **Configuración y uso del script**
 
