@@ -26,11 +26,27 @@ enviar_mensaje_telegram() {
         -d parse_mode="markdown" >/dev/null
 }
 
+# Obtener el idioma del sistema
+system_language=$(echo $LANG | cut -d'_' -f1)
+
+# Definir la palabra clave basada en el idioma
+keyword="upgradable" # Por defecto, para idiomas que no sean español
+
+if [ "$system_language" = "es" ]; then
+    keyword="actualizable" # Si el idioma es español
+fi
+
+# Ejecutar apt update para actualizar la lista de paquetes
+apt update > /dev/null 2>&1
+
 # Obtener la fecha y hora actual
 fecha_hora=$(obtener_fecha_hora)
 
-# Comprobar actualizaciones y almacenar el resultado
-actualizaciones=$(apt update 2>&1)
+# Obtener la cantidad de actualizaciones disponibles
+cantidad_actualizaciones=$(apt list --upgradable 2>/dev/null | grep -c "$keyword")
+
+# Obtener la lista de actualizaciones disponibles
+lista_actualizaciones=$(apt list --upgradable 2>/dev/null | grep '/' | awk -F'/' '{print $2}' | awk '{print $1}' | sort | uniq -c | awk '{print $2 ": " $1}')
 
 # Comprobar si existe el archivo /var/run/reboot-required
 if [ -e "/var/run/reboot-required" ]; then
@@ -40,15 +56,15 @@ Fecha y hora: $fecha_hora"
     enviar_mensaje_telegram "$mensaje"
 fi
 
-# Comprobar si hay actualizaciones disponibles
-if echo "$actualizaciones" | grep -q 'apt list --upgradable'; then
-    mensaje="¡Hay actualizaciones disponibles para *$FQDN*!:
+# Modificar el mensaje para incluir la lista de actualizaciones
+if [ "$cantidad_actualizaciones" -gt 0 ]; then
+    mensaje="¡Hay *$cantidad_actualizaciones* actualizaciones disponibles para *$FQDN*!
 
-$actualizaciones
+*Cantidad por repositorios:*
+$lista_actualizaciones
 
 Fecha y hora: $fecha_hora"
 else
-    # Si no hay actualizaciones disponibles, enviar un mensaje indicándolo
     mensaje="No se encontraron actualizaciones disponibles para *$FQDN*.
 
 Fecha y hora: $fecha_hora"
